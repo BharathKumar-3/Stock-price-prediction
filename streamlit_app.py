@@ -33,7 +33,7 @@ def load_data(ticker):
 
 
 def indian_stock():
-    data_file = pd.read_csv("indian stock data/cm14Jul2022bhav.csv")
+    data_file = pd.read_csv("cm14Jul2022bhav.csv")
     ind_stock = data_file["SYMBOL"].tolist()
     selected_stock = st.selectbox("Select stock Symbol", ind_stock, key="<stock_select>")
     data = stock_df(symbol=selected_stock, from_date=date(2018, 1, 1),
