@@ -2,3 +2,4 @@ prophet
 jugaad_data
 pandas
 yfinance
+plotly
